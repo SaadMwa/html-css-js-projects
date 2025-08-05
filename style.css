@@ -1,0 +1,126 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #030303;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+*{
+  margin: 0px;
+}
+
+#scoreboard {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #9ea3a5;
+}
+
+.game{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  justify-content: center;
+  margin-top: 50px;
+  gap:10px;
+  color: #030303;
+}
+.box{
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(193, 171, 171);
+  cursor: pointer;
+  background-color: black;
+  border-radius: 10px;
+  font-weight: 600px;
+  font-size: 5vh;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: orange;
+}
+.box:hover {
+  background-color: #454302;
+  transform: scale(1.05);
+}
+div p{
+  display: grid;
+  place-items: center;
+  height: 100px;
+}
+#Winner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  background-color: orange;
+  color: white;
+  box-shadow: 0 0 10px #4caf50;
+  border-radius: 20px;
+  width: 40vh;
+  height: 10vh;
+  position: relative;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-weight: 600;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+}
+#Winner.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+button.Reset,
+button.rs {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid orange;
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+  box-shadow: 0 0 10px #4caf50;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px;
+}
+button.Reset:hover,
+button.rs:hover {
+  transform: scale(1.1);
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.game-header {
+  text-align: center;
+  margin-top:50px ;
+  padding: 10px;
+}
+
+.game-header h1 {
+  font-size: 3rem;
+  color: orange;
+  text-shadow: 0 0 10px #4caf50;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.game-header .tagline {
+  font-size: 1rem;
+  color: #aaa;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
